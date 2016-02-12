@@ -1,0 +1,84 @@
+
+
+.appBar {
+	background-color: transparent;
+	color: inherit;
+	overflow: visible;
+	padding-right: 4px;
+}
+	.appBar[role="toolbar"] button {
+		float: right;
+	}
+		.appBar[role="toolbar"] button:enabled:hover,
+		.appBar[role="toolbar"] button:enabled:focus {
+			background-color: rgba(0,0,0,0.07);
+		}
+		.appBar[role="toolbar"] button:enabled:active {
+			background-color: rgba(0,0,0,0.13);
+		}
+		.appBar[role="toolbar"] button img {
+			height: 32px;
+		}
+
+.view {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	
+	margin-top: 64px;
+	
+	text-align: center;
+	
+	background-color: #fafafa; /* MaterialZ background */
+	
+	opacity: 0;
+	-webkit-transform: translateY(80%);
+	   -moz-transform: translateY(80%);
+	    -ms-transform: translateY(80%);
+	     -o-transform: translateY(80%);
+	        transform: translateY(80%);
+	
+	-webkit-transition-duration: 0.2s;
+	   -moz-transition-duration: 0.2s;
+	    -ms-transition-duration: 0.2s;
+	     -o-transition-duration: 0.2s;
+	        transition-duration: 0.2s;
+}
+	.view.active {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+		   -moz-transform: translateY(0);
+		    -ms-transform: translateY(0);
+		     -o-transform: translateY(0);
+		        transform: translateY(0);
+	}
+	
+	.view h1 {
+		font-size: 500%;
+		font-weight: bold;
+	}
+	.view button {
+		font-size: 200%;
+		padding: 16px 32px;
+		max-width: 95%;
+		
+		background-color: white;
+	}
+		.view button#rightBtn,
+		.view button#happyBtn {
+			width: 256px;
+		}
+
+@media (max-width: 600px) {
+	.view h1 {
+		font-size: 300%;
+	}
+	.view button {
+		font-size: 200%;
+	}
+		.view button#rightBtn,
+		.view button#happyBtn {
+			width: 160px;
+		}
+}

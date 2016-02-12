@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Right Vs. Happy: The Game</title>
+		
+		<link rel="stylesheet" type="text/css" href="styles/material-elements.css" />
+		<link rel="stylesheet" type="text/css" href="styles/material-depth.css" />
+		<link rel="stylesheet" type="text/css" href="styles/material-widgets.css" />
+		<link rel="stylesheet" type="text/css" href="styles/styles.css" />
+		
+		<script type="text/javascript" src="scripts/material-touch.js"></script>
+		<script type="text/javascript" src="scripts/game.js"></script>
+	</head>
+	<body>
+		<div role="toolbar" class="appBar">
+			Right Vs. Happy
+			<button title="About" id="aboutBtn"><img src="imgs/info.png" alt="About" /></button>
+		</div>
+		<div class="view active" id="gameScreen">
+			<h1>Choose one.</h1>
+			<button class="z1" id="rightBtn">Right</button>
+			<button class="z1" id="happyBtn">Happy</button>
+			<br />
+			<br />
+			<button class="z1" id="thirdBtn" style="display: none;">What do you want me to say?</button>
+		</div>
+		<div class="view" id="loseScreen" style="display: none;">
+			<h1>You lose.</h1>
+			<button class="z1" id="playAgainBtn">Play again</button>
+		</div>
+	</body>
+</html>
