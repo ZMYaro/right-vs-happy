@@ -50,7 +50,7 @@ function reset() {
 }
 
 function showInfo() {
-	alert('Initial concept from a joke suggestion by Andy Phelps, with help from Rob Clifford.  Programmed by Zachary Yaro.');
+	alert('Initial concept from a joke suggestion by Andy, with help from Rob.  Programmed by Zachary Yaro.');
 }
 
 
