@@ -1,0 +1,10 @@
+CACHE MANIFEST
+# 2017-01-01, v1
+index.html
+imgs/info.png
+scripts/game.js
+scripts/material-touch.js
+styles/material-elements.css
+styles/material-depth.css
+styles/material-widgets.css
+styles/styles.css
