@@ -4,7 +4,6 @@
 	background-color: transparent;
 	color: inherit;
 	overflow: visible;
-	padding-right: 4px;
 }
 	.appBar[role="toolbar"] button {
 		float: right;
@@ -16,6 +15,15 @@
 		.appBar[role="toolbar"] button:enabled:active {
 			background-color: rgba(0,0,0,0.13);
 		}
+
+#aboutBtn {
+	margin-right: -4px;
+}
+@media (max-width: 600px) {
+	#aboutBtn {
+		margin-right: -8px;
+	}
+}
 
 .view {
 	position: absolute;
