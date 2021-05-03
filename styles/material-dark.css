@@ -66,15 +66,6 @@ select[size] {
 	border-bottom-color: #c8c8c8;
 }
 
-/* --------======== TOOLBARS ========-------- */
-[role="toolbar"] button [role="img"],
-[role="toolbar"] [role="button"] [role="img"],
-[role="toolbar"] input[type="button"] [role="img"],
-[role="toolbar"] input[type="submit"] [role="img"],
-[role="toolbar"] input[type="reset"] [role="img"] {
-	fill: rgba(255, 255, 255, 0.9);
-}
-
 /* --------======== LISTS ========-------- */
 .list li {
 	border-color: #363636;

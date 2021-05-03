@@ -8,6 +8,9 @@
 	.appBar[role="toolbar"] button {
 		float: right;
 	}
+		.appBar[role="toolbar"] button svg {
+			fill: rgba(0, 0, 0, 0.54);
+		}
 		.appBar[role="toolbar"] button:enabled:hover,
 		.appBar[role="toolbar"] button:enabled:focus {
 			background-color: rgba(0, 0, 0, 0.07);
@@ -76,13 +79,16 @@
 		}
 
 @media (prefers-color-scheme: dark) {
-		.appBar[role="toolbar"] button:enabled:hover,
-		.appBar[role="toolbar"] button:enabled:focus {
-			background-color: rgba(255, 255, 255, 0.07);
-		}
-		.appBar[role="toolbar"] button:enabled:active {
-			background-color: rgba(255, 255, 255, 0.13);
-		}
+	.appBar[role="toolbar"] button svg {
+		fill: rgba(255, 255, 255, 0.9);
+	}
+	.appBar[role="toolbar"] button:enabled:hover,
+	.appBar[role="toolbar"] button:enabled:focus {
+		background-color: rgba(255, 255, 255, 0.07);
+	}
+	.appBar[role="toolbar"] button:enabled:active {
+		background-color: rgba(255, 255, 255, 0.13);
+	}
 	.view {
 		background-color: #121212; /* MaterialZ dark background */
 	}
