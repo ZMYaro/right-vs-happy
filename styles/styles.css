@@ -10,10 +10,10 @@
 	}
 		.appBar[role="toolbar"] button:enabled:hover,
 		.appBar[role="toolbar"] button:enabled:focus {
-			background-color: rgba(0,0,0,0.07);
+			background-color: rgba(0, 0, 0, 0.07);
 		}
 		.appBar[role="toolbar"] button:enabled:active {
-			background-color: rgba(0,0,0,0.13);
+			background-color: rgba(0, 0, 0, 0.13);
 		}
 
 #aboutBtn {
@@ -75,6 +75,25 @@
 			width: 256px;
 		}
 
+@media (prefers-color-scheme: dark) {
+		.appBar[role="toolbar"] button:enabled:hover,
+		.appBar[role="toolbar"] button:enabled:focus {
+			background-color: rgba(255, 255, 255, 0.07);
+		}
+		.appBar[role="toolbar"] button:enabled:active {
+			background-color: rgba(255, 255, 255, 0.13);
+		}
+	.view {
+		background-color: #121212; /* MaterialZ dark background */
+	}
+		.view button {
+			background-color: #2d2d2d;
+		}
+			.view button.z1:active,
+			.view button.z1.active {
+				background-color: #353535;
+			}
+}
 @media (max-width: 600px) {
 	.view h1 {
 		font-size: 300%;

@@ -12,6 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="styles/material-elements.css" />
 		<link rel="stylesheet" type="text/css" href="styles/material-depth.css" />
 		<link rel="stylesheet" type="text/css" href="styles/material-widgets.css" />
+		<link rel="stylesheet" type="text/css" href="styles/material-dark.css" media="(prefers-color-scheme: dark)" />
 		<link rel="stylesheet" type="text/css" href="styles/styles.css" />
 		
 		<script type="text/javascript" src="scripts/material-touch.js"></script>
@@ -19,7 +20,11 @@
 	</head>
 	<body>
 		<div role="toolbar" class="appBar">
-			<button title="About" id="aboutBtn"><img src="imgs/info.png" alt="About" /></button>
+			<button title="About" id="aboutBtn">
+				<svg role="img" aria-label="About">
+					<use href="imgs/info.svg#icon" xlink:href="imgs/info.svg#icon"></use>
+				</svg>
+			</button>
 		</div>
 		<div class="view active" id="gameScreen">
 			<h1>Choose one.</h1>
